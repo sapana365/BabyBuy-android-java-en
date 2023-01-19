@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Item Name</string>
+    <string name="app_price">Price</string>
+    <string name="app_purchased">Is purchased?</string>
+    <string name="heading_one">Quick &amp; Easy Data addition</string>
+    <string name="heading_two">Instant View of your lists</string>
+    <string name="heading_three">Send your items details via SMS</string>
+    <string name="heading_fourth">Proper and secure data management</string>
+    //descriptions
+    <string name="desc_one">Add your items information and store it for future use</string>
+    <string name="desc_two">Enjoy well managed lists of your items</string>
+    <string name="desc_three">Instantly share the information of your items via SMS </string>
+    <string name="desc_fourth">Securely maintain your item lists in a well-organized manner..</string>
+</resources>

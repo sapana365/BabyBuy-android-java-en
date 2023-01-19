@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/List"
+        android:icon="@drawable/listss"
+        android:title="Lists" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="Add" />
+
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_outline_feedback_24"
+        android:title="Feedback"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/log"
+        android:title="Logout"/>
+
+</menu>

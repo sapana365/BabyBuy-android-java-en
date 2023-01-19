@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/dash2"
+    tools:context=".AddActivity">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="152dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="128dp"
+        android:src="@drawable/babysleep"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="142dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="424dp"
+        android:src="@drawable/camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/textAdd"
+        android:layout_width="175dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/avatar"
+        android:layout_marginTop="444dp"
+        android:layout_marginEnd="64dp"
+        android:layout_toStartOf="@+id/avatar"
+        android:background="#B9090909"
+        android:text="Upload photo"
+
+        android:textColor="#F3F4F8"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        app:cardBackgroundColor="#AE6A20ED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textAdd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="165dp"
+            android:text="Add Item"
+            android:textColor="#EFE6E6"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textGone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="165dp"
+            android:text="Edit Item"
+            android:textColor="#EFE6E6"
+            android:textSize="24sp"
+            android:textStyle="bold"
+             />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:srcCompat="@drawable/removebg"
+            app:strokeColor="#54AF95DC"
+            app:strokeWidth="3dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="383dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="148dp"
+        android:backgroundTint="#F5090909"
+        android:hint="Item Name"
+        android:textColor="#0B0B0A"
+        android:textColorHint="#151515"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="389dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#100F0F"
+        android:hint="Item Price"
+        android:textColor="#070707"
+        android:textColorHint="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    <EditText
+        android:id="@+id/edit_location"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#101010"
+        android:hint="Store location"
+        android:textColor="#0E0E0E"
+        android:textColorHint="#151515"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_price" />
+
+    <EditText
+        android:id="@+id/edit_details"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#100F0F"
+        android:hint="Product details"
+        android:textColor="#070707"
+        android:textColorHint="#100F0F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_location" />
+
+    <EditText
+        android:id="@+id/edit_isPurchased"
+        android:layout_width="382dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#100F0F"
+        android:hint="Is Purchased?"
+        android:textColor="#101010"
+        android:textColorHint="#0B0B0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_details" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="370dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/edit_price"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="516dp"
+        android:backgroundTint="#93138D"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="386dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/edit_name"
+        android:layout_marginTop="512dp"
+        android:backgroundTint="#4860E4"
+        android:text="Edit"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_display"
+        android:layout_width="383dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/edit_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="572dp"
+        android:backgroundTint="#B0181C0F"
+        android:text="Display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:context=".DisplayData">
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="#FAE0FF"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="10dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/transparent"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/nav_menu"
+
+                />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            app:backgroundTint="#D26A20ED"
+
+            app:layout_anchor="@id/bottomAppBar" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

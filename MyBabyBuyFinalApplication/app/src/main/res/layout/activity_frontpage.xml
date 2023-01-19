@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrontpageActivity"
+    android:background="@drawable/dash2">
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="104dp"
+            android:fontFamily="serif-monospace"
+            android:text="BabyBuy"
+            android:textColor="#1E1E1D"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="528dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:srcCompat="@drawable/removebg"
+            app:strokeColor="#54AF95DC"
+            app:strokeWidth="3dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="191dp"
+            android:layout_height="223dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="200dp"
+            android:src="@drawable/babysleep"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="330dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="432dp"-->
+<!--        app:cardBackgroundColor="#811E3CE1"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView8"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="85dp"-->
+<!--            android:fontFamily="@font/adamina"-->
+<!--            android:text="Welcome"-->
+<!--            android:textAlignment="textStart"-->
+<!--            android:textColor="#F8E53C"-->
+<!--            android:textSize="34sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

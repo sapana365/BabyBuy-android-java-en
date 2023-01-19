@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#543F53C6"
+    app:cardBackgroundColor="#B73F53C6"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="149dp"
+        android:layout_marginTop="10dp"
+        android:background="#D23752EA">
+
+        <ImageButton
+            android:id="@+id/flowmenu"
+            android:layout_width="21dp"
+            android:layout_height="162dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-14dp"
+            android:layout_marginRight="-4dp"
+
+            android:backgroundTint="#543F53C6"
+            android:src="@drawable/ic_twotone_more_vert_24" />
+
+        <ImageView
+            android:id="@+id/viewavatar"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/txt_purchased"
+            android:layout_width="217dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/txt_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="60dp"
+            android:layout_toEndOf="@+id/viewavatar"
+            android:layout_toRightOf="@+id/viewavatar"
+            android:backgroundTint="#DE91EC"
+            android:text="@string/app_purchased"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/viewavatar"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="90dp"
+            android:layout_toStartOf="@+id/flowmenu"
+            android:layout_toEndOf="@+id/viewavatar"
+            android:layout_toRightOf="@+id/viewavatar"
+            android:text="@string/app_price"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_width="212dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="29dp"
+            android:layout_toEndOf="@+id/viewavatar"
+            android:text="Location"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_details"
+            android:layout_width="212dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_toEndOf="@+id/viewavatar"
+            android:text="Details"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
